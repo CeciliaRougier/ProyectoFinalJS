@@ -98,6 +98,8 @@ $(document).ready(function () {
 
     //MOSTRAR MEDIOS DE PAGO.
     function fMedioPago2() {
+        $('#btnPromo1').hide();
+        $('#btnPromo2').hide();
         $('#contPrecioTC').hide();
         $('#resultadoFinal').hide();
         $('#contMedioPago').show();
