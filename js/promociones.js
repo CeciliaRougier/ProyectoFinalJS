@@ -16,6 +16,8 @@ $(document).ready(function () {
 
     //MOSTRAR MEDIOS DE PAGO.
     function fMedioPago1() {
+        $('#btnPromo1').hide();
+        $('#btnPromo2').hide();
         $('#contPrecioTC').hide();
         $('#resultadoFinal').hide();
         $('#contMedioPago').show();
