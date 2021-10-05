@@ -1,0 +1,40 @@
+// Encabezados Main //
+
+%encabezados{
+    font-family: $fontH;
+    font-weight: bolder;
+    color: $fontColor;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    text-align: left;
+    font-style: italic;
+}
+
+// Mixin Container párrafos //
+
+@mixin containerParrafo ($porcentaje){
+    width: $porcentaje;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+// Mixin Estilos parrafos //
+@mixin parrafoNumero($porcentaje){
+    display: inline-block;
+    width: $porcentaje;
+    padding: 0 1rem;
+    color: $fontColor;
+    font-family: $fontText;
+    font-size: 1.5rem;
+    text-align: justify;
+
+}
+
+@mixin parrafos($porcentaje){
+    display: inline-block;
+    width: $porcentaje;
+    padding: 0 1rem;
+}
+

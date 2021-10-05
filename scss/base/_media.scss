@@ -1,0 +1,25 @@
+/* Responsive TABLET*/
+@media only screen and (max-width:990px){
+    html{
+        font-size: 10px;
+    }
+}
+
+/* Responsive MOBILE */
+@media only screen and (max-width:650px){
+    html{
+        font-size: 8px;
+    }
+    #inicio{
+        background-color: #0559519f;
+        padding: 2.5rem;
+        margin: 0;
+        height: auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+    }    
+    footer{
+        padding: 1rem;
+    }
+}

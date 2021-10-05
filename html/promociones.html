@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <!-- BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- FAMILY FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <!-- Metaetiquetas -->
+    <meta name="description"
+        content="Promociones / Animate a regalar y regalarte arte. Hay opciones para todos, por encargo o listas para que lleguen a tu casa en los próximos días.">
+    <meta name="keywords"
+        content="artista, obras de arte, óleos, retratos, pinturas, textura, animales, paisajes, promociones, envíos, 2x1">
+
+    <!-- Protocolo open graph -->
+    <meta property="og:title" content="Promociones / Animate a regalar o regalarte arte.">
+    <meta property="og:author" content="Nora Lacoste">
+    <meta property="og:img" content="https://ceciliarougier.github.io/ProyectoFinal/images/logo.png">
+    <meta property="og:description"
+        content="Obras de arte accesibles, con diferentes materiales y estilos. Encontrarás retratos, animales, pinturas botánicas, paisajes y mucho más. Mirá las promociones y elegí la mejor opción para vos.">
+
+    <title>Promociones / Animate a regalar o regalarte arte.</title>
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/39fe5bd17b.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="inicio">
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+            </a>
+            <h1 class="nombre">Nora Artista</h1>
+        </div>
+
+        <!-- Sección Navegable -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acuarelas.html">Acuarelas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oleos.html">Óleos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Sección de promociones -->
+        <section class="promociones">
+            <div class="item1 textos d-flex">
+                <h2>PROMOCIONES</h2>
+            </div>
+
+            <!-- Promoción 1 -->
+            <div class="card d-inline-block textos item2 promo" style="width: 30rem">
+                <img src="../images/promo1.jpg" class="card-img-top"
+                    alt="Imágen de ejemplo de la promoción número uno.">
+                <div class="card-body">
+                    <h3 class="card-title">PROMO 1: $1700</h5>
+                        <p class="card-text ">Comprá dos obras en acuarelas de 15x20 y pagá la segunda al 70%.</p>
+                        <button id="btnPromo1" class="btn">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Promoción 2 -->
+            <div class="card d-inline-block textos item3 promo" style="width: 30rem">
+                <img src="../images/promo2.jpg" class="card-img-top"
+                    alt="Imágen de ejemplo de la promoción número dos.">
+                <div class="card-body">
+                    <h3 class="card-title">PROMO 2: $2500</h5>
+                        <p class="card-text "> Comprá tres obras en acuarelas de 15x20 y pagá la tercera al 50%.</p>
+                        <button id="btnPromo2" class="btn">Comprar</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sección medio de pagos -->
+        <div id="contMedioPago" class="container" style="display: none;">
+            <h3 class="tituloPromo">¡Gracias por elegir nuestra promo!</h3>
+            <p>Nuestros medios de pago son: MercadoPago (10% de descuento), o tarjeta de crédito en 3, 6 o 9 cuotas (5%de recargo).</p>
+
+            <label for="medioPago">Elige un medio de pago:</label>
+            <select id="medioPago">
+                <option id="MP" value="MP">MercadoPago</option>
+                <option id="TC" value="TC">Tarjeta de crédito</option>
+            </select>
+            <button id="seleccionar1" class="btn" type="submit" value="Submit">Seleccionar</button>
+        </div>
+
+        <!-- Div calcular precio en tarjeta -->
+        <div id="contPrecioTC" class="container" style="display: none;">
+            <h3>El precio con tarjeta de crédito es:</h3>
+            <p id="precioTC" > </p>
+            <label for="cantCuotas">Elige cantidad de tarjetas:</label>
+            <select id="cantCuotas">
+                <option id="3" value="3">3 cuotas</option>
+                <option id="6" value="6">6 cuotas</option>
+                <option id="9" value="9">9 cuotas</option>
+            </select>
+            <button class="btn" id="seleccionar2" type="submit" value="Submit">Seleccionar</button>
+
+        </div>
+
+        <!-- Div Mostrar precio final -->
+        <div class="container" id="resultadoFinal"  style="display: none;">
+            <h3>El precio final es de:</h3>
+            <p id="precioFinal" > </p>
+            <h2 class="tituloPromo"  class="text-md-center" id="mensajeFinal">¡Gracias por comprar con nosotros!</h2>
+        </div>
+
+    </main>
+
+    <!-- Footer-->
+    <footer id="contacto">
+        <div>
+            <a class="redes-icon" href="http://facebook.com" target="_blank">
+                <i class="fab fa-facebook fa-3x"></i>
+            </a>
+            <a class="redes-icon" href="http://instagram.com" target="_blank">
+                <i class="fab fa-instagram fa-3x"></i>
+            </a>
+            <div>
+                <a href="tel:+941111223344">Cel: 011-15-11223344</a>
+                <a href="mailto:contacto@norartista.com">E-mail: contacto@norartista.com</a>
+            </div>
+        </div>
+        <a class="link-footer d-none d-lg-inline-block" href="#inicio">
+            Volver arriba
+        </a>
+        <a class="link-icon-w  d-none d-lg-inline-block" href="https://web.whatsapp.com/" target="_blank">
+            <i class="fab fa-whatsapp fa-3x"></i>
+        </a>
+    </footer>
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/39fe5bd17b.js" crossorigin="anonymous"></script>
+
+    <!-- Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Script jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Script JS -->
+    <script src="../js/promociones.js"></script>
+
+</body>
+
+</html>

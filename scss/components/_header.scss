@@ -1,0 +1,43 @@
+/* Header */
+header{
+    background-color: $headerBColor;
+    padding: 2.5rem;
+    margin: 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    div{
+        height: auto;
+        a{
+            img{
+                width: 10rem;
+            }
+        }
+        h1{
+            font-family: $fontH;
+            font-size: 4rem;
+            color: black;
+            letter-spacing: 0.2rem;
+            display: inline;
+        }
+    }
+    /* Sección Navegable */
+    nav{
+        display: inline-block;
+        div{
+            li{
+                font-family: $fontText;
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: $fontColor;
+                font-weight: bolder;
+                letter-spacing: 0.2rem;
+                display: inline-block;
+                margin: 0 1rem;
+                text-align: center;
+                background-color: transparent;
+            }
+        }
+    }
+}

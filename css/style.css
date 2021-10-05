@@ -1,0 +1,795 @@
+@charset "UTF-8";
+/* CSS General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../images/fotoTextura.jpg);
+  background-size: contain;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body a :visited {
+  color: black;
+}
+body a :hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header */
+header {
+  background-color: #0559519f;
+  padding: 2.5rem;
+  margin: 0;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  /* Sección Navegable */
+}
+header div {
+  height: auto;
+}
+header div a img {
+  width: 10rem;
+}
+header div h1 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 4rem;
+  color: black;
+  letter-spacing: 0.2rem;
+  display: inline;
+}
+header nav {
+  display: inline-block;
+}
+header nav div li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  margin: 0 1rem;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Grid mains */
+/* Main Index */
+.main-index {
+  margin: 2rem 0;
+  padding: 0;
+}
+.main-index .video-b {
+  width: 98.5vw;
+  height: auto;
+  margin: auto;
+}
+@media only screen and (max-width: 650px) {
+  .main-index .video-b {
+    display: none;
+  }
+}
+.main-index .video-s {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  .main-index .video-s {
+    display: flex;
+    width: 100vw;
+    height: auto;
+  }
+}
+
+main section .textos h3, main section .textos h2 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bolder;
+  color: black;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  text-align: left;
+  font-style: italic;
+}
+
+/* MAIN */
+main {
+  padding: 1rem;
+}
+main section .foto {
+  border-radius: 5px;
+  margin: 0.5rem;
+  box-shadow: 5px 6px 12px -2px rgba(113, 103, 103, 0.98);
+  -webkit-box-shadow: 5px 6px 12px -2px rgba(113, 103, 103, 0.98);
+  -moz-box-shadow: 5px 6px 12px -2px rgba(113, 103, 103, 0.98);
+}
+main section .foto:hover {
+  transform: scale(1.05);
+  transition: all, 250ms;
+}
+main section .textos {
+  background-color: #f2a6497c;
+  padding: 3rem 4rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+main section .textos h2 {
+  padding: 0 1rem;
+}
+main section .textos p {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  text-align: justify;
+}
+main .mainSobre {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, fit-content);
+  grid-gap: 1.5rem;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+@media only screen and (max-width: 650px) {
+  main .mainSobre {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+main .mainSobre .item1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .mainSobre .item2 {
+  grid-column-start: 5;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainSobre .item3 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainSobre .item4 {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .mainSobre .item5 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainSobre .item6 {
+  grid-column-start: 6;
+  grid-column-end: 11;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainAcuarelas {
+  padding: 0;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, fit-content);
+  grid-gap: 1.5rem;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+@media only screen and (max-width: 650px) {
+  main .mainAcuarelas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+main .mainAcuarelas .item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .mainAcuarelas .item2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelas .item3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelas .item4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelas .item5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves {
+  padding: 0;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, fit-content);
+  grid-gap: 1.5rem;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+@media only screen and (max-width: 650px) {
+  main .mainAcuarelasAves {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+main .mainAcuarelasAves .item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item7 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item8 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item9 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item10 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasAves .item11 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasBotanica {
+  padding: 0;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, fit-content);
+  grid-gap: 1.5rem;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+@media only screen and (max-width: 650px) {
+  main .mainAcuarelasBotanica {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+main .mainAcuarelasBotanica .item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .mainAcuarelasBotanica .item2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasBotanica .item3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasBotanica .item4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasBotanica .item5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasBotanica .item6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainAcuarelasBotanica .item7 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+main .mainOleos {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, fit-content);
+  grid-gap: 1.5rem;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+@media only screen and (max-width: 650px) {
+  main .mainOleos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+main .mainOleos .item1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .mainOleos .item2 {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainOleos .item3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainOleos .item4 {
+  grid-column-start: 5;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainOleos .item5 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainOleos .item6 {
+  grid-column-start: 6;
+  grid-column-end: 11;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainLapices {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(7, fit-content);
+  grid-gap: 1.5rem;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+@media only screen and (max-width: 650px) {
+  main .mainLapices {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+main .mainLapices .item1 {
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .mainLapices .item2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainLapices .item3 {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainLapices .item4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainLapices .item5 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .mainLapices .item6 {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background-color: #bf808083;
+  padding: 4rem;
+  margin: auto;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 650px) {
+  footer {
+    height: auto;
+  }
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer div .redes-icon {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+footer div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  padding: 0;
+  align-items: flex-start;
+}
+footer div div a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  margin: 0.5rem 1rem;
+  display: inline-block;
+}
+footer .link-footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  margin: 3.5rem;
+  color: black;
+  font-size: 1.3rem;
+  float: right;
+  justify-content: flex-end;
+}
+footer .link-icon-w {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 0.7rem 1rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0vh;
+  right: 0vw;
+  background-color: #82b3609c;
+}
+
+/* Responsive TABLET*/
+@media only screen and (max-width: 990px) {
+  html {
+    font-size: 10px;
+  }
+}
+/* Responsive MOBILE */
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 8px;
+  }
+
+  #inicio {
+    background-color: #0559519f;
+    padding: 2.5rem;
+    margin: 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+body main .promociones {
+  height: auto;
+  padding: 0;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, fit-content);
+  grid-gap: 1.5rem;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+@media only screen and (max-width: 650px) {
+  body main .promociones {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+body main .promociones .item1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+body main .promociones .item2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+body main .promociones .item3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+body main .promociones .promo {
+  padding: 1.5rem;
+  text-align: center;
+}
+body main .promociones .promo img {
+  border-radius: 5px;
+}
+body main h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: "Shadows Into Light", cursive;
+}
+body main h2 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  color: black;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+body main .btn {
+  background-color: #bf808083;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  border-radius: 5rem;
+}
+body main p, body main label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+body main .container {
+  text-align: center;
+  width: 60%;
+  background-color: #f2a64936;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+body main .container .tituloPromo {
+  background-color: #05595163;
+  border-radius: 4rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

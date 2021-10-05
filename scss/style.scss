@@ -1,0 +1,39 @@
+//Partials base//
+@import 'base/variables';
+
+
+/* CSS General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(../images/fotoTextura.jpg);
+    background-size: contain;
+    a{
+        text-decoration: none;
+        color: $fontColor;
+        :visited{
+            color: $fontColor;
+        }  
+        :hover{
+            text-decoration: none;
+            color: $fontColor;
+        }      
+    }
+}
+
+// Partials components//
+@import 'components/header';
+@import 'base/grid';
+@import 'components/main-index';
+@import 'base/textos';
+@import 'base/fotos';
+@import 'components/main';
+@import 'components/footer';
+@import 'base/media';
+@import 'components/promociones'

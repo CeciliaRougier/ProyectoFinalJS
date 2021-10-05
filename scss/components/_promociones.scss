@@ -1,0 +1,74 @@
+body{
+    main{
+        .promociones{
+            height: auto;
+            padding: 0;
+            @include sectionContainer (4, 3);        
+            .item1{
+                @include gridItem (2, 4, 1, 2, auto);
+            }
+            .item2{
+                @include gridItem (1, 3, 2, 4, 100%);
+                margin: auto;
+            }
+            .item3{
+                @include gridItem (3, 5, 2, 4, 100%);
+                margin: auto;
+            }
+            .promo{
+                img{
+                    border-radius: 5px;                    
+                }
+                padding: 1.5rem;
+                text-align: center;
+            }
+        }
+        h3{
+            font-size: 2.5rem;
+            font-weight: bolder;
+            font-family: $fontH;
+        }
+        h2{
+            font-family: $fontH;
+            font-weight: bold;
+            color: $fontColor;
+            font-size: 3rem;
+            letter-spacing: 0.5rem;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: bolder;
+        }
+        .btn{
+            background-color: $footerBColor;
+            font-family: $fontH;
+            font-size: 2rem;
+            font-weight: bolder;
+            letter-spacing: 0.2rem;
+            border-radius: 5rem;
+        }
+        p, label{
+            font-family: $fontText;
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        .container{
+            text-align: center;
+            width: 60%;
+            background-color:#f2a64936;
+            border-radius: 3rem;
+            margin-bottom: 1rem;
+            .tituloPromo{
+                background-color: #05595163;
+                border-radius: 4rem;
+                padding: 1rem;
+                margin: 1rem;
+                width: auto;
+                text-align: center;
+            }
+
+        }
+        
+ 
+    }
+}
